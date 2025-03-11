@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,22 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# WicsCon2025
+Source code for WicsCon 2025.
+
+Tech Stack: React, TypeScript, Vite, TailwindCSS v4, ShadCn.
+
+Hosting: Netlify
+
+# Todo
+  * Landing Page
+  * Sponsors Banner
+  * About
+    - WicsCon 2024 info
+  * Speakers
+  * Pannels/Events
+  * Footer
+  * NavBar
+  * Link to Registration
+>>>>>>> e7c9905b362761505a3a8c8c0a452e450ed79f08
