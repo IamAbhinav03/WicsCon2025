@@ -1,4 +1,18 @@
 import { useState } from "react";
+
+interface Speaker {
+  id: number;
+  name: string;
+  role: string;
+  topic: string;
+  image: string;
+}
+
+interface speakersData {
+  [key: string]: Speaker[];
+}
+
+
 const speakersData = {
   "Day 1: Workshops": [
     {
