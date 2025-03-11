@@ -83,12 +83,12 @@ const App = () => {
             <div className="text-red-700 font-bold text-2xl">WICSCON</div>
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
-            <a className="hover:text-red-600 transition-colors">About</a>
-            <a className="hover:text-red-600 transition-colors">Highlights</a>
-            <a className="hover:text-red-600 transition-colors">Speakers</a>
-            <a className="hover:text-red-600 transition-colors">Sponsors</a>
-            <a className="hover:text-red-600 transition-colors">FAQs</a>
-          </div>
+    <a href="#about" className="hover:text-red-600 transition-colors">About</a>
+    <a href="#highlights" className="hover:text-red-600 transition-colors">Highlights</a>
+    <a href="#speakers" className="hover:text-red-600 transition-colors">Speakers</a>
+    <a href="#sponsors" className="hover:text-red-600 transition-colors">Sponsors</a>
+    <a href="#faqs" className="hover:text-red-600 transition-colors">FAQs</a>
+</div>
           <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
             Register Now
           </button>
@@ -121,7 +121,7 @@ const App = () => {
       </section>
 
       {/* About Section Preview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" id="about">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
@@ -166,7 +166,7 @@ const App = () => {
       </section>
 
       {/* Highlights Section Preview */}
-      <section className="py-16 bg-red-50">
+      <section className="py-16 bg-red-50" id="highlights">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
             Last Year's Highlights
@@ -200,7 +200,7 @@ const App = () => {
       </section>
 
             {/* Speakers Preview */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-white" id="speakers">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
                         Speakers & Events
@@ -256,7 +256,7 @@ const App = () => {
             </section>
 
       {/* Sponsors Preview */}
-      <section className="py-16 bg-red-50">
+      <section className="py-16 bg-red-50" id="sponsors">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
             Sponsors & Partners
@@ -295,6 +295,39 @@ const App = () => {
             </button>
           </div>
         </div>
+      </section>
+
+      {/* FAQs Section */}
+      <section id="faqs" className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-6 text-center text-red-700">FAQs</h2>
+          <div className="space-y-6"></div>
+          <div className="border-b pb-4">
+          <h3 className="text-xl font-semibold mb-2">Who can attend the conference?</h3>
+          <p className="text-gray-700">
+            The conference is open to everyone, regardless of gender, who is interested in supporting and promoting diversity in technology.
+          </p>
+        </div>
+        <div className="border-b pb-4">
+          <h3 className="text-xl font-semibold mb-2">How can I register for the event?</h3>
+          <p className="text-gray-700">
+            You can register for the event by clicking the "Register Now" button on our website and filling out the registration form.
+          </p>
+        </div>
+        <div className="border-b pb-4">
+          <h3 className="text-xl font-semibold mb-2">Are there any sponsorship opportunities?</h3>
+          <p className="text-gray-700">
+            Yes, we offer various sponsorship packages. Please contact our sponsorship team for more details.
+          </p>
+        </div>
+        <div className="border-b pb-4">
+          <h3 className="text-xl font-semibold mb-2">Where is the event located?</h3>
+          <p className="text-gray-700">
+            The event will be held at the Tech Convention Center, located in downtown San Francisco.
+          </p>
+        </div>
+        </div>
+
       </section>
 
       {/* Footer Preview */}
@@ -424,6 +457,9 @@ const App = () => {
               <a className="hover:text-white">Terms</a>
             </div>
           </div>
+        </div>
+        <div className="text-center text-gray-400 mt-4">
+          Designed by Abhinav and Siddhant
         </div>
       </footer>
     </div>
