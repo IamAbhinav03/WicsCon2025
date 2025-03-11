@@ -13,7 +13,7 @@ interface speakersData {
 }
 
 
-const speakersData = {
+const speakersData: speakersData = {
   "Day 1: Workshops": [
     {
       id: 1,
