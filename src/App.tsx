@@ -1,4 +1,7 @@
 import { useState } from "react";
+import useCountUp from './hooks/useCountUp';
+import useInView from './hooks/useInView';
+
 
 interface Speaker {
   id: number;
@@ -6,6 +9,7 @@ interface Speaker {
   role: string;
   topic: string;
   image: string;
+  description: string;
 }
 
 interface speakersData {
@@ -20,21 +24,24 @@ const speakersData: speakersData = {
       name: "Dr. Emma Reynolds",
       role: "CTO, Future Tech Industries",
       topic: "Building Resilient AI Systems",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Dr. Emma Reynolds will discuss the latest advancements in AI and how to build systems that can withstand various challenges."
     },
     {
       id: 2,
       name: "Prof. Alan Turing",
       role: "Professor, University of Computing",
       topic: "Quantum Computing 101",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Prof. Alan Turing will provide an introduction to quantum computing and its potential impact on the future of technology."
     },
     {
       id: 3,
       name: "Ms. Ada Lovelace",
       role: "Software Engineer, CodeMasters",
       topic: "The Evolution of Programming Languages",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Ms. Ada Lovelace will explore the history and evolution of programming languages, highlighting key milestones and future trends."
     }
   ],
   "Day 2: Keynotes": [
@@ -43,21 +50,24 @@ const speakersData: speakersData = {
       name: "Mr. John Doe",
       role: "CEO, Innovatech",
       topic: "The Future of Technology",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Mr. John Doe will share his vision for the future of technology and how it will shape our world in the coming years."
     },
     {
       id: 5,
       name: "Ms. Grace Hopper",
       role: "Rear Admiral, U.S. Navy",
       topic: "Pioneering Computer Science",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Ms. Grace Hopper will discuss her pioneering work in computer science and its lasting impact on the industry."
     },
     {
       id: 6,
       name: "Mr. Elon Musk",
       role: "CEO, SpaceX",
       topic: "Space Exploration and Technology",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Mr. Elon Musk will talk about the latest advancements in space exploration and the role of technology in making it possible."
     }
   ],
   "Day 3: Panels": [
@@ -66,27 +76,37 @@ const speakersData: speakersData = {
       name: "Ms. Jane Smith",
       role: "CTO, TechWorld",
       topic: "Diversity in Tech Panels",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Ms. Jane Smith will lead a panel discussion on the importance of diversity in the tech industry and how to foster inclusive environments."
     },
     {
       id: 8,
       name: "Mr. Tim Berners-Lee",
       role: "Inventor of the World Wide Web",
       topic: "The Web: Past, Present, and Future",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Mr. Tim Berners-Lee will reflect on the history of the web, its current state, and future possibilities."
     },
     {
       id: 9,
       name: "Ms. Sheryl Sandberg",
       role: "COO, Facebook",
       topic: "Leadership in Tech",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
+      description: "Ms. Sheryl Sandberg will share her insights on leadership in the tech industry and how to navigate challenges and opportunities."
     }
   ]
 };
 
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(Object.keys(speakersData)[0]);
+  const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [highlightsRef, isHighlightsInView] = useInView();
+
+  const count1 = useCountUp(2.5);
+  const count2 = useCountUp(48);
+  const count3 = useCountUp(92);
 
   return (
     <div className="font-sans text-gray-800">
@@ -185,25 +205,28 @@ const App = () => {
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
             Last Year's Highlights
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div ref={highlightsRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
                 <div className="text-5xl font-bold text-red-700 mb-4">
-                  2.5K+
+                  {isHighlightsInView ? count1 : 0}K+
                 </div>
                 <div className="text-xl">Attendees from over 40 countries</div>
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-5xl font-bold text-red-700 mb-4">48</div>
+                <div className="text-5xl font-bold text-red-700 mb-4">
+                  {isHighlightsInView ? count2 : 0}
+                </div>
                 <div className="text-xl">Workshops & technical sessions</div>
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-5xl font-bold text-red-700 mb-4">92%</div>
+                <div className="text-5xl font-bold text-red-700 mb-4">
+                  {isHighlightsInView ? count3 : 0}%
+                </div>
                 <div className="text-xl">
                   Attendees reported valuable networking
                 </div>
@@ -211,6 +234,7 @@ const App = () => {
             </div>
           </div>
         </div>
+
       </section>
 
             {/* Speakers Preview */}
@@ -259,7 +283,13 @@ const App = () => {
                                     <p className="text-sm text-gray-600 mb-4">
                                         {speaker.topic}
                                     </p>
-                                    <button className="w-full border border-gray-300 py-2 px-4 rounded-md">
+                                    <button 
+                                        onClick={() => {
+                                            setSelectedSpeaker(speaker);
+                                            setIsModalOpen(true);
+                                        }} 
+                                        className="w-full border border-gray-300 hover:bg-gray-50 py-2 px-4 rounded-md"
+                                    >
                                         View Details
                                     </button>
                                 </div>
@@ -343,6 +373,59 @@ const App = () => {
         </div>
 
       </section>
+
+      {/* Speaker Details Modal */}
+{isModalOpen && selectedSpeaker && (
+  <div 
+    className="fixed inset-0 z-50 flex items-center justify-center p-4"
+    style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+    onClick={() => setIsModalOpen(false)}
+  >
+    <div 
+      className="bg-white rounded-lg max-w-2xl w-full mx-auto relative"
+      onClick={e => e.stopPropagation()} // Prevent modal from closing when clicking inside
+    >
+      <button 
+        onClick={() => setIsModalOpen(false)}
+        className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div className="p-6">
+        <div className="flex items-start space-x-6">
+          <img 
+            src={selectedSpeaker.image} 
+            alt={selectedSpeaker.name}
+            className="w-32 h-32 object-cover rounded-lg"
+          />
+          <div>
+            <h3 className="text-2xl font-bold mb-2">{selectedSpeaker.name}</h3>
+            <p className="text-red-700 text-lg mb-2">{selectedSpeaker.role}</p>
+            <p className="text-gray-600 mb-4">{selectedSpeaker.topic}</p>
+            <div className="prose max-w-none">
+              <p className="text-gray-700">
+                {selectedSpeaker.description || 
+                  `Join ${selectedSpeaker.name} for an inspiring session on ${selectedSpeaker.topic}. 
+                  This session will provide valuable insights and practical knowledge for attendees 
+                  of all experience levels.`}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="border-t px-6 py-4 bg-gray-50 rounded-b-lg">
+        <button
+          onClick={() => setIsModalOpen(false)}
+          className="w-full bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
 
       {/* Footer Preview */}
       <footer className="bg-gray-900 text-white py-12">
