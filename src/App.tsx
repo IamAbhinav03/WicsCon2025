@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useCountUp from "./hooks/useCountUp";
+import useCountUp from "./hooks/useCountUP";
 import useInView from "./hooks/useInView";
 
 interface Speaker {
@@ -123,7 +123,7 @@ const App = () => {
       <nav className="bg-white bg-opacity-95 shadow-sm border-b">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <div className="flex items-center">
-            <div className="text-red-700 font-bold text-2xl">WICSCON</div>
+            <div className="text-red-700 font-bold text-2xl">WiCSCon</div>
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
             <a href="#about" className="hover:text-red-600 transition-colors">
@@ -188,7 +188,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-red-700">
-                About WiCS & WICSCON
+                About WiCS & WiCSCon
               </h2>
               <p className="text-lg mb-6">
                 The Women in Computing Society (WiCS) is a global community
