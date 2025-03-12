@@ -636,7 +636,7 @@ const App = () => {
           </div>
           <div className="text-center text-gray-400 mt-4">
             <div>© 2025 Women in Computing Society</div>
-            Designed by Abhinav Hari and Siddhant
+            Designed by Abhinav Hari and Siddhant Malik
           </div>
         </div>
       </footer>
