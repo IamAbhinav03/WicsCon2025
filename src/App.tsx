@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// const MAPS_API_KEY: string | undefined = process.env.GOOGLE_MAPS_API_KEY;
+
 interface Speaker {
   id: number;
   name: string;
@@ -12,7 +14,6 @@ interface speakersData {
   [key: string]: Speaker[];
 }
 
-
 const speakersData: speakersData = {
   "Day 1: Workshops": [
     {
@@ -20,22 +21,22 @@ const speakersData: speakersData = {
       name: "Dr. Emma Reynolds",
       role: "CTO, Future Tech Industries",
       topic: "Building Resilient AI Systems",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 2,
       name: "Prof. Alan Turing",
       role: "Professor, University of Computing",
       topic: "Quantum Computing 101",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 3,
       name: "Ms. Ada Lovelace",
       role: "Software Engineer, CodeMasters",
       topic: "The Evolution of Programming Languages",
-      image: `/api/placeholder/400/400`
-    }
+      image: `/api/placeholder/400/400`,
+    },
   ],
   "Day 2: Keynotes": [
     {
@@ -43,22 +44,22 @@ const speakersData: speakersData = {
       name: "Mr. John Doe",
       role: "CEO, Innovatech",
       topic: "The Future of Technology",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 5,
       name: "Ms. Grace Hopper",
       role: "Rear Admiral, U.S. Navy",
       topic: "Pioneering Computer Science",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 6,
       name: "Mr. Elon Musk",
       role: "CEO, SpaceX",
       topic: "Space Exploration and Technology",
-      image: `/api/placeholder/400/400`
-    }
+      image: `/api/placeholder/400/400`,
+    },
   ],
   "Day 3: Panels": [
     {
@@ -66,27 +67,29 @@ const speakersData: speakersData = {
       name: "Ms. Jane Smith",
       role: "CTO, TechWorld",
       topic: "Diversity in Tech Panels",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 8,
       name: "Mr. Tim Berners-Lee",
       role: "Inventor of the World Wide Web",
       topic: "The Web: Past, Present, and Future",
-      image: `/api/placeholder/400/400`
+      image: `/api/placeholder/400/400`,
     },
     {
       id: 9,
       name: "Ms. Sheryl Sandberg",
       role: "COO, Facebook",
       topic: "Leadership in Tech",
-      image: `/api/placeholder/400/400`
-    }
-  ]
+      image: `/api/placeholder/400/400`,
+    },
+  ],
 };
 
 const App = () => {
-  const [activeDay, setActiveDay] = useState<string>(Object.keys(speakersData)[0]);
+  const [activeDay, setActiveDay] = useState<string>(
+    Object.keys(speakersData)[0]
+  );
 
   return (
     <div className="font-sans text-gray-800">
@@ -97,12 +100,31 @@ const App = () => {
             <div className="text-red-700 font-bold text-2xl">WICSCON</div>
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
-    <a href="#about" className="hover:text-red-600 transition-colors">About</a>
-    <a href="#highlights" className="hover:text-red-600 transition-colors">Highlights</a>
-    <a href="#speakers" className="hover:text-red-600 transition-colors">Speakers</a>
-    <a href="#sponsors" className="hover:text-red-600 transition-colors">Sponsors</a>
-    <a href="#faqs" className="hover:text-red-600 transition-colors">FAQs</a>
-</div>
+            <a href="#about" className="hover:text-red-600 transition-colors">
+              About
+            </a>
+            <a
+              href="#highlights"
+              className="hover:text-red-600 transition-colors"
+            >
+              Highlights
+            </a>
+            <a
+              href="#speakers"
+              className="hover:text-red-600 transition-colors"
+            >
+              Speakers
+            </a>
+            <a
+              href="#sponsors"
+              className="hover:text-red-600 transition-colors"
+            >
+              Sponsors
+            </a>
+            <a href="#faqs" className="hover:text-red-600 transition-colors">
+              FAQs
+            </a>
+          </div>
           <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
             Register Now
           </button>
@@ -167,13 +189,13 @@ const App = () => {
               </button>
             </div>
             <div className="md:w-1/2 rounded-xl overflow-hidden shadow-xl">
-                <div className="bg-gray-100 aspect-video flex items-center justify-center">
+              <div className="bg-gray-100 aspect-video flex items-center justify-center">
                 <img
                   src="/BannerImage.jpg"
                   alt="Women in Tech Conference"
                   className="w-full h-full object-cover"
                 />
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -213,61 +235,55 @@ const App = () => {
         </div>
       </section>
 
-            {/* Speakers Preview */}
-            <section className="py-16 bg-white" id="speakers">
-                <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
-                        Speakers & Events
-                    </h2>
+      {/* Speakers Preview */}
+      <section className="py-16 bg-white" id="speakers">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+            Speakers & Events
+          </h2>
 
-                    <div className="flex mb-8 border-b">
-                        {Object.keys(speakersData).map((day) => (
-                            <button
-                                key={day}
-                                onClick={() => setActiveDay(day)}
-                                className={`px-4 py-2 font-medium ${
-                                    activeDay === day
-                                        ? "text-red-700 border-b-2 border-red-700"
-                                        : "text-gray-500"
-                                }`}
-                            >
-                                {day}
-                            </button>
-                        ))}
-                    </div>
+          <div className="flex mb-8 border-b">
+            {Object.keys(speakersData).map((day) => (
+              <button
+                key={day}
+                onClick={() => setActiveDay(day)}
+                className={`px-4 py-2 font-medium ${
+                  activeDay === day
+                    ? "text-red-700 border-b-2 border-red-700"
+                    : "text-gray-500"
+                }`}
+              >
+                {day}
+              </button>
+            ))}
+          </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {speakersData[activeDay].map((speaker) => (
-                            <div
-                                key={speaker.id}
-                                className="overflow-hidden transition-all duration-300 hover:shadow-lg border rounded-lg"
-                            >
-                                <div className="aspect-square relative overflow-hidden bg-gray-100">
-                                    <img
-                                        src={speaker.image}
-                                        alt={speaker.name}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-1">
-                                        {speaker.name}
-                                    </h3>
-                                    <p className="text-red-700 mb-3">
-                                        {speaker.role}
-                                    </p>
-                                    <p className="text-sm text-gray-600 mb-4">
-                                        {speaker.topic}
-                                    </p>
-                                    <button className="w-full border border-gray-300 py-2 px-4 rounded-md">
-                                        View Details
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {speakersData[activeDay].map((speaker) => (
+              <div
+                key={speaker.id}
+                className="overflow-hidden transition-all duration-300 hover:shadow-lg border rounded-lg"
+              >
+                <div className="aspect-square relative overflow-hidden bg-gray-100">
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-            </section>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
+                  <p className="text-red-700 mb-3">{speaker.role}</p>
+                  <p className="text-sm text-gray-600 mb-4">{speaker.topic}</p>
+                  <button className="w-full border border-gray-300 py-2 px-4 rounded-md">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Sponsors Preview */}
       <section className="py-16 bg-red-50" id="sponsors">
@@ -314,47 +330,64 @@ const App = () => {
       {/* FAQs Section */}
       <section id="faqs" className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6 text-center text-red-700">FAQs</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-red-700">
+            FAQs
+          </h2>
           <div className="space-y-6"></div>
           <div className="border-b pb-4">
-          <h3 className="text-xl font-semibold mb-2">Who can attend the conference?</h3>
-          <p className="text-gray-700">
-            The conference is open to everyone, regardless of gender, who is interested in supporting and promoting diversity in technology.
-          </p>
+            <h3 className="text-xl font-semibold mb-2">
+              Who can attend the conference?
+            </h3>
+            <p className="text-gray-700">
+              The conference is open to everyone, regardless of gender, who is
+              interested in supporting and promoting diversity in technology.
+            </p>
+          </div>
+          <div className="border-b pb-4">
+            <h3 className="text-xl font-semibold mb-2">
+              How can I register for the event?
+            </h3>
+            <p className="text-gray-700">
+              You can register for the event by clicking the "Register Now"
+              button on our website and filling out the registration form.
+            </p>
+          </div>
+          <div className="border-b pb-4">
+            <h3 className="text-xl font-semibold mb-2">
+              Are there any sponsorship opportunities?
+            </h3>
+            <p className="text-gray-700">
+              Yes, we offer various sponsorship packages. Please contact our
+              sponsorship team for more details.
+            </p>
+          </div>
+          <div className="border-b pb-4">
+            <h3 className="text-xl font-semibold mb-2">
+              Where is the event located?
+            </h3>
+            <p className="text-gray-700">
+              The event will be held at the Tech Convention Center, located in
+              downtown San Francisco.
+            </p>
+          </div>
         </div>
-        <div className="border-b pb-4">
-          <h3 className="text-xl font-semibold mb-2">How can I register for the event?</h3>
-          <p className="text-gray-700">
-            You can register for the event by clicking the "Register Now" button on our website and filling out the registration form.
-          </p>
-        </div>
-        <div className="border-b pb-4">
-          <h3 className="text-xl font-semibold mb-2">Are there any sponsorship opportunities?</h3>
-          <p className="text-gray-700">
-            Yes, we offer various sponsorship packages. Please contact our sponsorship team for more details.
-          </p>
-        </div>
-        <div className="border-b pb-4">
-          <h3 className="text-xl font-semibold mb-2">Where is the event located?</h3>
-          <p className="text-gray-700">
-            The event will be held at the Tech Convention Center, located in downtown San Francisco.
-          </p>
-        </div>
-        </div>
-
       </section>
 
       {/* Footer Preview */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {/* WICSCON Info */}
             <div>
               <h3 className="text-xl font-bold mb-4">WICSCON</h3>
               <p className="mb-4 text-gray-300">
                 The premier conference for women in computing and technology.
               </p>
               <div className="flex space-x-4">
-                <a className="text-gray-300 hover:text-white" href="https://www.facebook.com/ashokawics/">
+                <a
+                  className="text-gray-300 hover:text-white"
+                  href="https://www.facebook.com/ashokawics/"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -369,7 +402,10 @@ const App = () => {
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                   </svg>
                 </a>
-                <a className="text-gray-300 hover:text-white" href="https://x.com/wics_ashoka">
+                <a
+                  className="text-gray-300 hover:text-white"
+                  href="https://x.com/wics_ashoka"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -384,7 +420,10 @@ const App = () => {
                     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                   </svg>
                 </a>
-                <a className="text-gray-300 hover:text-white" href="https://www.instagram.com/wics.ashoka/">
+                <a
+                  className="text-gray-300 hover:text-white"
+                  href="https://www.instagram.com/wics.ashoka/"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -408,7 +447,10 @@ const App = () => {
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </a>
-                <a className="text-gray-300 hover:text-white" href="https://www.linkedin.com/company/wics-ashoka-university">
+                <a
+                  className="text-gray-300 hover:text-white"
+                  href="https://www.linkedin.com/company/wics-ashoka-university"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -428,6 +470,7 @@ const App = () => {
               </div>
             </div>
 
+            {/* Quick Links */}
             <div>
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
@@ -446,34 +489,35 @@ const App = () => {
               </ul>
             </div>
 
-            <div className="col-span-2 md:col-span-1">
-              <h3 className="text-lg font-bold mb-4">Stay Updated</h3>
-              <p className="mb-4 text-gray-300">
-                Subscribe to our newsletter for updates.
-              </p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 px-4 py-2 rounded-l-md flex-1"
-                />
-                <button className="bg-red-700 hover:bg-red-800 px-4 py-2 rounded-r-md">
-                  Subscribe
-                </button>
+            {/* Contact Information */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <p className="text-gray-300">📍 Ashoka University, India</p>
+              <p className="text-gray-300">📞 +91 12345 67890</p>
+              <p className="text-gray-300">✉️ contact@wiccon.com</p>
+            </div>
+
+            {/* Map Section */}
+            <div>
+              <iframe
+                width="300"
+                height="300"
+                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.94712001384767, 77.10147015438375&amp;q=Ashoka%20University&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+
+            {/* Bottom Section */}
+            <div className="border-t border-gray-800 mt-8 pt-6 text-sm text-gray-400 flex justify-between">
+              <div className="flex space-x-4">
+                {/* <a className="hover:text-white">Privacy</a>
+                <a className="hover:text-white">Terms</a> */}
               </div>
             </div>
           </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-6 text-sm text-gray-400 flex justify-between">
+          <div className="text-center text-gray-400 mt-4">
             <div>© 2025 Women in Computing Society</div>
-            <div className="flex space-x-4">
-              <a className="hover:text-white">Privacy</a>
-              <a className="hover:text-white">Terms</a>
-            </div>
+            Designed by Abhinav Hari and Siddhant
           </div>
-        </div>
-        <div className="text-center text-gray-400 mt-4">
-          Designed by Abhinav and Siddhant
         </div>
       </footer>
     </div>
