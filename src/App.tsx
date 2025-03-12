@@ -74,33 +74,118 @@ const speakersData = {
         "Mr. Elon Musk will talk about the latest advancements in space exploration and the role of technology in making it possible.",
     },
   ],
-  "Day 3: Panels": [
+  "Keynote Speakers": [
     {
-      id: 7,
-      name: "Ms. Jane Smith",
-      role: "CTO, TechWorld",
-      topic: "Diversity in Tech Panels",
+      id: 1,
+      name: "Ritcha Ranjan",
+      role: "Vice President of Product Management, Microsoft",
+      topic: "Leadership & Innovation in Tech",
       image: `/api/placeholder/400/400`,
       description:
-        "Ms. Jane Smith will lead a panel discussion on the importance of diversity in the tech industry and how to foster inclusive environments.",
+        "Ritcha Ranjan, former Director at Google, will share insights on leadership, innovation, and navigating the tech industry.",
+    },
+    {
+      id: 2,
+      name: "Ashish Shankar",
+      role: "MD & CEO, Motilal Oswal Private Wealth",
+      topic: "The Future of Wealth Management",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Ashish Shankar will discuss trends in wealth management and strategies for financial success in the digital age.",
+    },
+  ],
+  Panelists: [
+    {
+      id: 3,
+      name: "Jigyasa Kishore",
+      role: "Vice President, Moglix",
+      topic: "Scaling Tech Startups",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Jigyasa Kishore will provide insights on scaling tech startups and navigating challenges in the industry.",
+    },
+    {
+      id: 4,
+      name: "Nandini Singh",
+      role: "Partner, IBM",
+      topic: "Enterprise AI & Cloud Computing",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Nandini Singh will discuss the role of AI and cloud computing in modern enterprises and the future of business technology.",
+    },
+    {
+      id: 5,
+      name: "Azra Ismail",
+      role: "Founder & CEO, MakerGhat",
+      topic: "Inclusive Tech & Social Innovation",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Azra Ismail will talk about the importance of inclusive technology and fostering social innovation.",
+    },
+    {
+      id: 6,
+      name: "Ruchira Sarin",
+      role: "Director, DEOC Accessibility",
+      topic: "Digital Accessibility & Inclusion",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Ruchira Sarin will explore how organizations can implement accessibility-first design and create inclusive digital spaces.",
+    },
+  ],
+  "Workshop Speakers": [
+    {
+      id: 7,
+      name: "Amar Jain",
+      role: "Co-Founder, Mission Accessibility & Ex-Accenture",
+      topic: "Creating Digitally Accessible Spaces",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Amar Jain will lead a workshop on designing and implementing accessible digital spaces to ensure inclusivity.",
     },
     {
       id: 8,
-      name: "Mr. Tim Berners-Lee",
-      role: "Inventor of the World Wide Web",
-      topic: "The Web: Past, Present, and Future",
+      name: "Zain Samdani",
+      role: "Founder, ExoHeal",
+      topic: "Designing Real-World Bots",
       image: `/api/placeholder/400/400`,
       description:
-        "Mr. Tim Berners-Lee will reflect on the history of the web, its current state, and future possibilities.",
+        "Microsoft award-winning inventor Zain Samdani will conduct a hands-on workshop on designing and developing real-world robotic systems.",
     },
     {
       id: 9,
-      name: "Ms. Sheryl Sandberg",
-      role: "COO, Facebook",
-      topic: "Leadership in Tech",
+      name: "Kaviraj Singh",
+      role: "CEO, SaralWeb & Ex-Microsoft",
+      topic: "Leveraging AI for Business Transformation",
       image: `/api/placeholder/400/400`,
       description:
-        "Ms. Sheryl Sandberg will share her insights on leadership in the tech industry and how to navigate challenges and opportunities.",
+        "Kaviraj Singh will explore AI-driven business transformation strategies and how organizations can adopt AI successfully.",
+    },
+    {
+      id: 10,
+      name: "Dhruv Aggarwal",
+      role: "PhD, Computer Science, Cornell University",
+      topic: "Advanced Machine Learning Techniques",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Dhruv Aggarwal will provide an in-depth workshop on the latest advancements in machine learning techniques.",
+    },
+    {
+      id: 11,
+      name: "Prof. Upinder Singh Bhalla",
+      role: "National Centre for Biological Sciences, TIFR",
+      topic: "Neuroinformatics & Computational Biology",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Prof. Upinder Singh Bhalla will delve into neuroinformatics and computational biology, discussing applications in research and healthcare.",
+    },
+    {
+      id: 12,
+      name: "Prof. Ankhi Roy",
+      role: "IIT Indore & CERN",
+      topic: "Quantum Computing in Scientific Research",
+      image: `/api/placeholder/400/400`,
+      description:
+        "Prof. Ankhi Roy will present on the role of quantum computing in scientific research and its potential breakthroughs.",
     },
   ],
 };
