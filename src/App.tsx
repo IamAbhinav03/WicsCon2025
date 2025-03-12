@@ -15,7 +15,7 @@ interface speakersData {
   [key: string]: Speaker[];
 }
 
-const speakersData: speakersData = {
+const speakersData = {
   "Day 1: Workshops": [
     {
       id: 1,
