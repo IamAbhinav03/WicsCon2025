@@ -513,20 +513,20 @@ const App = () => {
 
             <div>
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
+                <ul className="space-y-2">
                 <li>
-                  <a className="text-gray-300 hover:text-white">About WiCS</a>
+                  <a href="#about" className="text-gray-300 hover:text-white">About WiCS</a>
                 </li>
                 <li>
-                  <a className="text-gray-300 hover:text-white">Speakers</a>
+                  <a href="#speakers" className="text-gray-300 hover:text-white">Speakers</a>
                 </li>
                 <li>
-                  <a className="text-gray-300 hover:text-white">Schedule</a>
+                  <a href="#sponsors" className="text-gray-300 hover:text-white">Sponsors</a>
                 </li>
                 <li>
-                  <a className="text-gray-300 hover:text-white">FAQs</a>
+                  <a href="#faqs" className="text-gray-300 hover:text-white">FAQs</a>
                 </li>
-              </ul>
+                </ul>
             </div>
 
             <div className="col-span-2 md:col-span-1">
