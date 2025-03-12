@@ -592,7 +592,7 @@ const App = () => {
     <div className="border-t border-gray-800 mt-12 pt-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="text-gray-400 text-sm">
-          © {new Date().getFullYear()} Women in Computing Society. All rights reserved.
+          © {new Date().getFullYear()} Women in Computing Society, Ashoka University
         </div>
         <div className="text-gray-400 text-sm mt-4 md:mt-0">
           Designed by Abhinav Hari and Siddhant Malik
