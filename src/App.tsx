@@ -23,7 +23,7 @@ const speakersData = {
       "role": "CEO, 3rdiTech - Aerospace Technology Innovator",
       "topic": "The Future of Aerospace Technology",
       "description": "Insights into cutting-edge innovations in aerospace and emerging technologies.",
-      "image": "/api/placeholder/400/400"
+      "image": "vrinda.jpeg"
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@ const speakersData = {
       "role": "Renowned CS Textbook Author",
       "topic": "Empowering the Next Generation of Coders",
       "description": "How education and curriculum development shape the future of technology.",
-      "image": "/api/placeholder/400/400"
+      "image": "sumita.jpeg"
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@ const speakersData = {
       "role": "Product Manager, Microsoft & Co-Founder, Girls Grow",
       "topic": "Women in Tech and Leadership",
       "description": "Strategies to foster diversity, inclusion, and leadership in technology.",
-      "image": "/api/placeholder/400/400"
+      "image": "aashna.jpeg"
     },
     {
       "id": 4,
@@ -47,7 +47,7 @@ const speakersData = {
       "role": "Director, CCAOI & Global Leader in Internet Governance",
       "topic": "Internet Governance and Digital Rights",
       "description": "Exploring policies shaping the internet and their global impact.",
-      "image": "/api/placeholder/400/400"
+      "image": "amrita.jpeg"
     },
     {
       "id": 5,
@@ -55,7 +55,7 @@ const speakersData = {
       "role": "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
       "topic": "Entrepreneurship and Innovation in Science & Technology",
       "description": "Insights into startup ecosystems, research commercialization, and growth strategies.",
-      "image": "/api/placeholder/400/400"
+      "image": "divya.jpeg"
     },
     {
       "id": 6,
@@ -63,7 +63,7 @@ const speakersData = {
       "role": "Co-Founder, Internet Freedom Foundation",
       "topic": "Digital Rights and Privacy",
       "description": "A discussion on the importance of internet freedom and cybersecurity.",
-      "image": "/api/placeholder/400/400"
+      "image": "apar.webp"
     },
     {
       "id": 7,
@@ -71,17 +71,8 @@ const speakersData = {
       "role": "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
       "topic": "Tech, Leadership, and the Future of Digital Transformation",
       "description": "How leadership and innovation shape technological progress.",
-      "image": "/api/placeholder/400/400"
+      "image": "nivedita.jpeg"
     },
-    {
-      "id": 8,
-      "name": "Colin Fernandez",
-      "role": "VP of Innovation, Axis Max Life Insurance",
-      "topic": "Technology and the Future of Insurance",
-      "description": "How emerging technologies are transforming the insurance industry.",
-      "image": "/api/placeholder/400/400"
-    }
-  ],
    "Day 1: Events": [
     {
       "id": 1,
