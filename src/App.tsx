@@ -163,9 +163,7 @@ const speakersData = {
       "image": "/api/placeholder/400/400"
     }
   ]
-}
-
-;
+};
 
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(
