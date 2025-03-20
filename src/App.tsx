@@ -16,179 +16,126 @@ interface speakersData {
 }
 
 const speakersData = {
-  "Day 1: Workshops": [
+  "Day 1: Events": [
     {
-      id: 1,
-      name: "Dr. Emma Reynolds",
-      role: "CTO, Future Tech Industries",
-      topic: "Building Resilient AI Systems",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Dr. Emma Reynolds will discuss the latest advancements in AI and how to build systems that can withstand various challenges.",
+      "id": 1,
+      "name": "Registration",
+      "role": "9:00 - 10:00 AM",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 2,
-      name: "Prof. Alan Turing",
-      role: "Professor, University of Computing",
-      topic: "Quantum Computing 101",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Prof. Alan Turing will provide an introduction to quantum computing and its potential impact on the future of technology.",
+      "id": 2,
+      "name": "Opening Ceremony",
+      "role": "10:00 - 10:15 AM",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 3,
-      name: "Ms. Ada Lovelace",
-      role: "Software Engineer, CodeMasters",
-      topic: "The Evolution of Programming Languages",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Ms. Ada Lovelace will explore the history and evolution of programming languages, highlighting key milestones and future trends.",
-    },
-  ],
-  "Day 2: Keynotes": [
-    {
-      id: 4,
-      name: "Mr. John Doe",
-      role: "CEO, Innovatech",
-      topic: "The Future of Technology",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Mr. John Doe will share his vision for the future of technology and how it will shape our world in the coming years.",
+      "id": 3,
+      "name": "Panel 1 + Q&A / Research Presentation",
+      "role": "10:30 - 12:00 PM",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 5,
-      name: "Ms. Grace Hopper",
-      role: "Rear Admiral, U.S. Navy",
-      topic: "Pioneering Computer Science",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Ms. Grace Hopper will discuss her pioneering work in computer science and its lasting impact on the industry.",
+      "id": 4,
+      "name": "Workshop 1 & Research Talk 1",
+      "role": "12:10 - 1:10 PM",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 6,
-      name: "Mr. Elon Musk",
-      role: "CEO, SpaceX",
-      topic: "Space Exploration and Technology",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Mr. Elon Musk will talk about the latest advancements in space exploration and the role of technology in making it possible.",
+      "id": 5,
+      "name": "Networking Lunch",
+      "role": "1:20 - 2:20 PM",
+      "image": "/api/placeholder/400/400"
     },
+    {
+      "id": 6,
+      "name": "Speaker Session 1 & 2",
+      "role": "2:30 - 3:30 PM",
+      "image": "/api/placeholder/400/400"
+    },
+    {
+      "id": 7,
+      "name": "Workshop 2 & Research Talk 2",
+      "role": "3:40 - 4:40 PM",
+      "image": "/api/placeholder/400/400"
+    },
+    {
+      "id": 8,
+      "name": "Panel 2 + Q&A / Research Presentations",
+      "role": "4:45 - 5:45 PM",
+      "image": "/api/placeholder/400/400"
+    },
+    {
+      "id": 9,
+      "name": "Snacks",
+      "role": "5:45 - 6:00 PM",
+      "image": "/api/placeholder/400/400"
+    },
+    {
+      "id": 10,
+      "name": "Keynote Talk",
+      "role": "6:00 - 7:00 PM",
+      "image": "/api/placeholder/400/400"
+    },
+    {
+      "id": 11,
+      "name": "Closing Ceremony",
+      "role": "7:00 - 7:30 PM",
+      "image": "/api/placeholder/400/400"
+    }
   ],
   "Keynote Speakers": [
     {
-      id: 1,
-      name: "Ritcha Ranjan",
-      role: "Vice President of Product Management, Microsoft",
-      topic: "Leadership & Innovation in Tech",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Ritcha Ranjan, former Director at Google, will share insights on leadership, innovation, and navigating the tech industry.",
+      "id": 1,
+      "name": "Vrinda Kapoor",
+      "role": "CEO, 3rdiTech - Aerospace Technology Innovator",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 2,
-      name: "Ashish Shankar",
-      role: "MD & CEO, Motilal Oswal Private Wealth",
-      topic: "The Future of Wealth Management",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Ashish Shankar will discuss trends in wealth management and strategies for financial success in the digital age.",
-    },
-  ],
-  Panelists: [
-    {
-      id: 3,
-      name: "Jigyasa Kishore",
-      role: "Vice President, Moglix",
-      topic: "Scaling Tech Startups",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Jigyasa Kishore will provide insights on scaling tech startups and navigating challenges in the industry.",
+      "id": 2,
+      "name": "Sumita Arora",
+      "role": "Renowned CS Textbook Author",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 4,
-      name: "Nandini Singh",
-      role: "Partner, IBM",
-      topic: "Enterprise AI & Cloud Computing",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Nandini Singh will discuss the role of AI and cloud computing in modern enterprises and the future of business technology.",
+      "id": 3,
+      "name": "Aashna Jha",
+      "role": "Product Manager, Microsoft & Co-Founder, Girls Grow",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 5,
-      name: "Azra Ismail",
-      role: "Founder & CEO, MakerGhat",
-      topic: "Inclusive Tech & Social Innovation",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Azra Ismail will talk about the importance of inclusive technology and fostering social innovation.",
+      "id": 4,
+      "name": "Amrita Choudhary",
+      "role": "Director, CCAOI & Global Leader in Internet Governance",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 6,
-      name: "Ruchira Sarin",
-      role: "Director, DEOC Accessibility",
-      topic: "Digital Accessibility & Inclusion",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Ruchira Sarin will explore how organizations can implement accessibility-first design and create inclusive digital spaces.",
-    },
-  ],
-  "Workshop Speakers": [
-    {
-      id: 7,
-      name: "Amar Jain",
-      role: "Co-Founder, Mission Accessibility & Ex-Accenture",
-      topic: "Creating Digitally Accessible Spaces",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Amar Jain will lead a workshop on designing and implementing accessible digital spaces to ensure inclusivity.",
+      "id": 5,
+      "name": "Dr. Divya Rajput",
+      "role": "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 8,
-      name: "Zain Samdani",
-      role: "Founder, ExoHeal",
-      topic: "Designing Real-World Bots",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Microsoft award-winning inventor Zain Samdani will conduct a hands-on workshop on designing and developing real-world robotic systems.",
+      "id": 6,
+      "name": "Apar Gupta",
+      "role": "Co-Founder, Internet Freedom Foundation",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 9,
-      name: "Kaviraj Singh",
-      role: "CEO, SaralWeb & Ex-Microsoft",
-      topic: "Leveraging AI for Business Transformation",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Kaviraj Singh will explore AI-driven business transformation strategies and how organizations can adopt AI successfully.",
+      "id": 7,
+      "name": "Nivedita Ganesh",
+      "role": "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
+      "image": "/api/placeholder/400/400"
     },
     {
-      id: 10,
-      name: "Dhruv Aggarwal",
-      role: "PhD, Computer Science, Cornell University",
-      topic: "Advanced Machine Learning Techniques",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Dhruv Aggarwal will provide an in-depth workshop on the latest advancements in machine learning techniques.",
-    },
-    {
-      id: 11,
-      name: "Prof. Upinder Singh Bhalla",
-      role: "National Centre for Biological Sciences, TIFR",
-      topic: "Neuroinformatics & Computational Biology",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Prof. Upinder Singh Bhalla will delve into neuroinformatics and computational biology, discussing applications in research and healthcare.",
-    },
-    {
-      id: 12,
-      name: "Prof. Ankhi Roy",
-      role: "IIT Indore & CERN",
-      topic: "Quantum Computing in Scientific Research",
-      image: `/api/placeholder/400/400`,
-      description:
-        "Prof. Ankhi Roy will present on the role of quantum computing in scientific research and its potential breakthroughs.",
-    },
-  ],
-};
+      "id": 8,
+      "name": "Colin Fernandez",
+      "role": "VP of Innovation, Axis Max Life Insurance",
+      "image": "/api/placeholder/400/400"
+    }
+  ]
+}
+;
 
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(
