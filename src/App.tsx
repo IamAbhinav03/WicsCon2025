@@ -23,7 +23,7 @@ const speakersData = {
       "role": "CEO, 3rdiTech - Aerospace Technology Innovator",
       "topic": "The Future of Aerospace Technology",
       "description": "Insights into cutting-edge innovations in aerospace and emerging technologies.",
-      "image": "vrinda.jpeg"
+      "image": "/vrinda.jpeg"
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@ const speakersData = {
       "role": "Renowned CS Textbook Author",
       "topic": "Empowering the Next Generation of Coders",
       "description": "How education and curriculum development shape the future of technology.",
-      "image": "sumita.jpeg"
+      "image": "/sumita.jpeg"
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@ const speakersData = {
       "role": "Product Manager, Microsoft & Co-Founder, Girls Grow",
       "topic": "Women in Tech and Leadership",
       "description": "Strategies to foster diversity, inclusion, and leadership in technology.",
-      "image": "aashna.jpeg"
+      "image": "/aashna.jpeg"
     },
     {
       "id": 4,
@@ -47,7 +47,7 @@ const speakersData = {
       "role": "Director, CCAOI & Global Leader in Internet Governance",
       "topic": "Internet Governance and Digital Rights",
       "description": "Exploring policies shaping the internet and their global impact.",
-      "image": "amrita.jpeg"
+      "image": "/amrita.jpeg"
     },
     {
       "id": 5,
@@ -55,7 +55,7 @@ const speakersData = {
       "role": "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
       "topic": "Entrepreneurship and Innovation in Science & Technology",
       "description": "Insights into startup ecosystems, research commercialization, and growth strategies.",
-      "image": "divya.jpeg"
+      "image": "/divya.jpeg"
     },
     {
       "id": 6,
@@ -63,7 +63,7 @@ const speakersData = {
       "role": "Co-Founder, Internet Freedom Foundation",
       "topic": "Digital Rights and Privacy",
       "description": "A discussion on the importance of internet freedom and cybersecurity.",
-      "image": "apar.webp"
+      "image": "/apar.webp"
     },
     {
       "id": 7,
@@ -162,7 +162,7 @@ const speakersData = {
       "description": "Summary of the day's insights and closing remarks.",
       "image": "/api/placeholder/400/400"
     }
-  ],
+  ]
 }
 
 ;
