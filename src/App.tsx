@@ -72,8 +72,8 @@ const speakersData = {
       "topic": "Tech, Leadership, and the Future of Digital Transformation",
       "description": "How leadership and innovation shape technological progress.",
       "image": "nivedita.jpeg"
-    },
-   "Day 1: Events": [
+    },],
+   "Day 1: Events" : [
     {
       "id": 1,
       "name": "Registration",
