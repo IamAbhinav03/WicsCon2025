@@ -21,66 +21,88 @@ const speakersData = {
       "id": 1,
       "name": "Registration",
       "role": "9:00 - 10:00 AM",
+      "topic": "Attendee Check-in and Onboarding",
+      "description": "Participants check in and receive event materials.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 2,
       "name": "Opening Ceremony",
       "role": "10:00 - 10:15 AM",
+      "topic": "Welcome Address",
+      "description": "Opening remarks by event organizers and key dignitaries.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 3,
       "name": "Panel 1 + Q&A / Research Presentation",
       "role": "10:30 - 12:00 PM",
+      "topic": "Latest Research and Industry Trends",
+      "description": "Experts discuss groundbreaking research and field advancements.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 4,
       "name": "Workshop 1 & Research Talk 1",
       "role": "12:10 - 1:10 PM",
+      "topic": "Hands-on Learning & Insights",
+      "description": "Interactive session on emerging technologies and research breakthroughs.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 5,
       "name": "Networking Lunch",
       "role": "1:20 - 2:20 PM",
+      "topic": "Professional Networking",
+      "description": "Opportunity for attendees to connect with peers and industry leaders.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 6,
       "name": "Speaker Session 1 & 2",
       "role": "2:30 - 3:30 PM",
+      "topic": "Innovations in Technology",
+      "description": "Talks by industry experts on cutting-edge advancements in tech.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 7,
       "name": "Workshop 2 & Research Talk 2",
       "role": "3:40 - 4:40 PM",
+      "topic": "Deep Dive into Research and Practical Applications",
+      "description": "Exploring applied research and real-world implementations.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 8,
       "name": "Panel 2 + Q&A / Research Presentations",
       "role": "4:45 - 5:45 PM",
+      "topic": "Future Perspectives in Technology and Research",
+      "description": "Discussion on upcoming challenges and opportunities in the industry.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 9,
       "name": "Snacks",
       "role": "5:45 - 6:00 PM",
+      "topic": "Break",
+      "description": "Refreshments and informal discussions.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 10,
       "name": "Keynote Talk",
       "role": "6:00 - 7:00 PM",
+      "topic": "Visionary Insights from Industry Leaders",
+      "description": "Keynote address by a distinguished speaker.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 11,
       "name": "Closing Ceremony",
       "role": "7:00 - 7:30 PM",
+      "topic": "Event Wrap-up and Acknowledgments",
+      "description": "Summary of the day's insights and closing remarks.",
       "image": "/api/placeholder/400/400"
     }
   ],
@@ -89,52 +111,69 @@ const speakersData = {
       "id": 1,
       "name": "Vrinda Kapoor",
       "role": "CEO, 3rdiTech - Aerospace Technology Innovator",
+      "topic": "The Future of Aerospace Technology",
+      "description": "Insights into cutting-edge innovations in aerospace and emerging technologies.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 2,
       "name": "Sumita Arora",
       "role": "Renowned CS Textbook Author",
+      "topic": "Empowering the Next Generation of Coders",
+      "description": "How education and curriculum development shape the future of technology.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 3,
       "name": "Aashna Jha",
       "role": "Product Manager, Microsoft & Co-Founder, Girls Grow",
+      "topic": "Women in Tech and Leadership",
+      "description": "Strategies to foster diversity, inclusion, and leadership in technology.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 4,
       "name": "Amrita Choudhary",
       "role": "Director, CCAOI & Global Leader in Internet Governance",
+      "topic": "Internet Governance and Digital Rights",
+      "description": "Exploring policies shaping the internet and their global impact.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 5,
       "name": "Dr. Divya Rajput",
       "role": "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
+      "topic": "Entrepreneurship and Innovation in Science & Technology",
+      "description": "Insights into startup ecosystems, research commercialization, and growth strategies.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 6,
       "name": "Apar Gupta",
       "role": "Co-Founder, Internet Freedom Foundation",
+      "topic": "Digital Rights and Privacy",
+      "description": "A discussion on the importance of internet freedom and cybersecurity.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 7,
       "name": "Nivedita Ganesh",
       "role": "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
+      "topic": "Tech, Leadership, and the Future of Digital Transformation",
+      "description": "How leadership and innovation shape technological progress.",
       "image": "/api/placeholder/400/400"
     },
     {
       "id": 8,
       "name": "Colin Fernandez",
       "role": "VP of Innovation, Axis Max Life Insurance",
+      "topic": "Technology and the Future of Insurance",
+      "description": "How emerging technologies are transforming the insurance industry.",
       "image": "/api/placeholder/400/400"
     }
   ]
 }
+
 ;
 
 const App = () => {
