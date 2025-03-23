@@ -108,21 +108,21 @@ const eventData: eventsData = {
       time: "10:00 - 10:15 AM",
       name: "Opening Ceremony",
       location: "Auditorium",
-      speakers: ["Event Organizers", "Key Dignitaries"],
+      speakers: ["TBA"],
     },
     {
       id: 3,
       time: "10:30 - 12:00 PM",
       name: "Panel 1 + Q&A / Research Presentation",
       location: "Conference Room A",
-      speakers: ["Dr. Alice Johnson", "Prof. Mark Lee"],
+      speakers: ["TBA"],
     },
     {
       id: 4,
       time: "12:10 - 1:10 PM",
       name: "Workshop 1 & Research Talk 1",
       location: "Lab 3",
-      speakers: ["Jane Doe", "Dr. Robert White"],
+      speakers: ["TBA"],
     },
     {
       id: 5,
@@ -136,7 +136,42 @@ const eventData: eventsData = {
       time: "2:30 - 3:30 PM",
       name: "Speaker Session 1 & 2",
       location: "Auditorium",
-      speakers: ["Vrinda Kapoor", "Sumita Arora"],
+      speakers: ["TBA"],
+    },
+    {
+      id: 7,
+      time: "3:40 - 4:40 PM",
+      name: "Workshop 2 & Research Talk 2",
+      location: "Conference Room B",
+      speakers: ["TBA"],
+    },
+    {
+      id: 8,
+      time: "4:45 - 5:45 PM",
+      name: "Panel 2 + Q&A / Research Presentation",
+      location: "Conference Room B",
+      speakers: ["TBA"],
+    },
+    {
+      id: 9,
+      time: "5:45 - 6:00 PM",
+      name: "Snack Break",
+      location: "Cafeteria",
+      speakers: [],
+    },
+    {
+      id: 10,
+      time: "6:00 - 7:00 PM",
+      name: "Keynote Talk",
+      location: "Auditorium",
+      speakers: ["TBA"],
+    },
+    {
+      id: 11,
+      time: "7:00 - 7:50 PM",
+      name: "Closing Ceremony",
+      location: "Auditorium",
+      speakers: ["TBA"],
     },
   ],
 };
@@ -345,9 +380,9 @@ const App = () => {
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
                       <p className="text-red-700 mb-3">{speaker.role}</p>
-                      <p className="text-sm text-gray-600 mb-4">
+                      {/* <p className="text-sm text-gray-600 mb-4">
                         {speaker.topic}
-                      </p>
+                      </p> */}
                     </div>
                     <div className="border-t p-4">
                       <button
@@ -692,7 +727,7 @@ const App = () => {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="text-gray-400">contact@wiccon.com</span>
+                  <span className="text-gray-400">wics@ashoka.edu.in</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg
