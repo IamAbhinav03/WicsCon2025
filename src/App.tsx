@@ -475,9 +475,11 @@ const App = () => {
               Join our diverse community of sponsors and connect with the
               brightest talent and industry leaders in tech.
             </p>
-            <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded-md">
-              Contact Our Sponsorship Team
-            </button>
+            <a href="mailto:wics@ashoka.edu.in">
+              <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded-md">
+                Contact Our Sponsorship Team
+              </button>
+            </a>
           </div>
         </div>
       </section>
