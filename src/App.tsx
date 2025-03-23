@@ -1,6 +1,4 @@
 import { useState } from "react";
-import useCountUp from "./hooks/useCountUP";
-import useInView from "./hooks/useInView";
 
 interface Speaker {
   id: number;
@@ -182,7 +180,7 @@ const sponsorsData = [
   {
     id: 1,
     name: "Axis Max Life Insurance",
-    image: "/sponsors/axis_life.jpg",
+    image: "/sponsors/axis_life.svg",
   },
 ];
 
@@ -190,11 +188,6 @@ const App = () => {
   const [activeDay, setActiveDay] = useState<string>(tabs[0]);
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [highlightsRef, isHighlightsInView] = useInView();
-
-  const count1 = useCountUp(2.5);
-  const count2 = useCountUp(48);
-  const count3 = useCountUp(92);
 
   return (
     <div className="font-sans text-gray-800">
@@ -310,39 +303,40 @@ const App = () => {
         </div>
       </section>
 
-      {/* Highlights Section Preview */}
-      <section className="py-16 bg-red-50" id="highlights">
+      {/* Countdown Section */}
+      <section className="py-16 bg-red-50" id="countdown">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
-            Last Year's Highlights
+            Conference Details
           </h2>
-          <div
-            ref={highlightsRef}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-5xl font-bold text-red-700 mb-4">
-                  {isHighlightsInView ? count1 : 0}K+
+                <div className="text-2xl font-semibold text-gray-600 mb-2">
+                  Conference Date
                 </div>
-                <div className="text-xl">Attendees from over 40 countries</div>
+                <div className="text-4xl font-bold text-red-700">
+                  March 29th, 2025
+                </div>
+                <div className="text-lg text-gray-500 mt-2">
+                  Ashoka University, Sonipat
+                </div>
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-5xl font-bold text-red-700 mb-4">
-                  {isHighlightsInView ? count2 : 0}
+                <div className="text-2xl font-semibold text-gray-600 mb-2">
+                  Days Until Conference
                 </div>
-                <div className="text-xl">Workshops & technical sessions</div>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-              <div className="p-6">
-                <div className="text-5xl font-bold text-red-700 mb-4">
-                  {isHighlightsInView ? count3 : 0}%
+                <div className="text-4xl font-bold text-red-700">
+                  {Math.ceil(
+                    (new Date("March 29, 2025 00:00:00").getTime() -
+                      new Date().getTime()) /
+                      (1000 * 60 * 60 * 24)
+                  )}
                 </div>
-                <div className="text-xl">
-                  Attendees reported valuable networking
+                <div className="text-lg text-gray-500 mt-2">
+                  Don't miss out on this exciting event!
                 </div>
               </div>
             </div>
