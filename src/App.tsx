@@ -523,8 +523,8 @@ const App = () => {
               Where is the event located?
             </h3>
             <p className="text-gray-700">
-              The event will be held at the Tech Convention Center, located in
-              downtown San Francisco.
+              The event will be held at the Ashoka University on{" "}
+              <b>March 29th, 2025</b>.
             </p>
           </div>
         </div>
