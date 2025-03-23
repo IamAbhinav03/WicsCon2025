@@ -230,9 +230,11 @@ const App = () => {
               FAQs
             </a>
           </div>
-          <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
-            Register Now
-          </button>
+          <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
+            <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
+              Register Now
+            </button>
+          </a>
         </div>
       </nav>
 
@@ -255,9 +257,11 @@ const App = () => {
             Join us for the annual conference where women in technology connect,
             inspire, and transform the future.
           </p>
-          <button className="text-lg px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
-            Register Now
-          </button>
+          <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
+            <button className="text-lg px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
+              Register Now
+            </button>
+          </a>
         </div>
       </section>
 
