@@ -178,6 +178,14 @@ const eventData: eventsData = {
 
 const tabs = ["Speakers", "Events"];
 
+const sponsorsData = [
+  {
+    id: 1,
+    name: "Axis Max Life Insurance",
+    image: "/sponsors/axis_life.jpg",
+  },
+];
+
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(tabs[0]);
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
@@ -436,18 +444,18 @@ const App = () => {
           </h2>
 
           <div className="mb-12">
-            <h3 className="text-xl font-bold mb-6 text-center">
+            {/* <h3 className="text-xl font-bold mb-6 text-center">
               Platinum Sponsors
-            </h3>
+            </h3> */}
             <div className="flex flex-wrap justify-center gap-8 mb-8">
-              {[1, 2, 3].map((index) => (
+              {sponsorsData.map((sponsor) => (
                 <div
-                  key={index}
+                  key={sponsor.id}
                   className="bg-white rounded-lg shadow-md p-6 w-36 h-36 flex items-center justify-center"
                 >
                   <img
-                    src={`/api/placeholder/120/120`}
-                    alt={`Sponsor ${index}`}
+                    src={sponsor.image}
+                    alt={sponsor.name}
                     className="max-w-full max-h-full"
                   />
                 </div>
