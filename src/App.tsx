@@ -16,159 +16,135 @@ interface speakersData {
 }
 
 const speakersData = {
-  "Keynote Speakers": [
+  Speakers: [
     {
-      "id": 1,
-      "name": "Vrinda Kapoor",
-      "role": "CEO, 3rdiTech - Aerospace Technology Innovator",
-      "topic": "The Future of Aerospace Technology",
-      "description": "Insights into cutting-edge innovations in aerospace and emerging technologies.",
-      "image": "/vrinda.jpeg"
+      id: 1,
+      name: "Vrinda Kapoor",
+      role: "CEO, 3rdiTech - Aerospace Technology Innovator",
+      topic: "The Future of Aerospace Technology",
+      description:
+        "Insights into cutting-edge innovations in aerospace and emerging technologies.",
+      image: "/vrinda.jpeg",
     },
     {
-      "id": 2,
-      "name": "Sumita Arora",
-      "role": "Renowned CS Textbook Author",
-      "topic": "Empowering the Next Generation of Coders",
-      "description": "How education and curriculum development shape the future of technology.",
-      "image": "/sumita.jpeg"
+      id: 2,
+      name: "Sumita Arora",
+      role: "Renowned CS Textbook Author",
+      topic: "Empowering the Next Generation of Coders",
+      description:
+        "How education and curriculum development shape the future of technology.",
+      image: "/sumita.jpeg",
     },
     {
-      "id": 3,
-      "name": "Aashna Jha",
-      "role": "Product Manager, Microsoft & Co-Founder, Girls Grow",
-      "topic": "Women in Tech and Leadership",
-      "description": "Strategies to foster diversity, inclusion, and leadership in technology.",
-      "image": "/aashna.jpeg"
+      id: 3,
+      name: "Aashna Jha",
+      role: "Product Manager, Microsoft & Co-Founder, Girls Grow",
+      topic: "Women in Tech and Leadership",
+      description:
+        "Strategies to foster diversity, inclusion, and leadership in technology.",
+      image: "/aashna.jpeg",
     },
     {
-      "id": 4,
-      "name": "Amrita Choudhary",
-      "role": "Director, CCAOI & Global Leader in Internet Governance",
-      "topic": "Internet Governance and Digital Rights",
-      "description": "Exploring policies shaping the internet and their global impact.",
-      "image": "/amrita.jpeg"
+      id: 4,
+      name: "Amrita Choudhary",
+      role: "Director, CCAOI & Global Leader in Internet Governance",
+      topic: "Internet Governance and Digital Rights",
+      description:
+        "Exploring policies shaping the internet and their global impact.",
+      image: "/amrita.jpeg",
     },
     {
-      "id": 5,
-      "name": "Dr. Divya Rajput",
-      "role": "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
-      "topic": "Entrepreneurship and Innovation in Science & Technology",
-      "description": "Insights into startup ecosystems, research commercialization, and growth strategies.",
-      "image": "/divya.jpeg"
+      id: 5,
+      name: "Dr. Divya Rajput",
+      role: "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
+      topic: "Entrepreneurship and Innovation in Science & Technology",
+      description:
+        "Insights into startup ecosystems, research commercialization, and growth strategies.",
+      image: "/divya.jpeg",
     },
     {
-      "id": 6,
-      "name": "Apar Gupta",
-      "role": "Co-Founder, Internet Freedom Foundation",
-      "topic": "Digital Rights and Privacy",
-      "description": "A discussion on the importance of internet freedom and cybersecurity.",
-      "image": "/apar.webp"
+      id: 6,
+      name: "Apar Gupta",
+      role: "Co-Founder, Internet Freedom Foundation",
+      topic: "Digital Rights and Privacy",
+      description:
+        "A discussion on the importance of internet freedom and cybersecurity.",
+      image: "/apar.webp",
     },
     {
-      "id": 7,
-      "name": "Nivedita Ganesh",
-      "role": "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
-      "topic": "Tech, Leadership, and the Future of Digital Transformation",
-      "description": "How leadership and innovation shape technological progress.",
-      "image": "nivedita.jpeg"
-    },],
-   "Day 1: Events" : [
-    {
-      "id": 1,
-      "name": "Registration",
-      "role": "9:00 - 10:00 AM",
-      "topic": "Attendee Check-in and Onboarding",
-      "description": "Participants check in and receive event materials.",
-      "image": "/api/placeholder/400/400"
+      id: 7,
+      name: "Nivedita Ganesh",
+      role: "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
+      topic: "Tech, Leadership, and the Future of Digital Transformation",
+      description:
+        "How leadership and innovation shape technological progress.",
+      image: "nivedita.jpeg",
     },
-    {
-      "id": 2,
-      "name": "Opening Ceremony",
-      "role": "10:00 - 10:15 AM",
-      "topic": "Welcome Address",
-      "description": "Opening remarks by event organizers and key dignitaries.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 3,
-      "name": "Panel 1 + Q&A / Research Presentation",
-      "role": "10:30 - 12:00 PM",
-      "topic": "Latest Research and Industry Trends",
-      "description": "Experts discuss groundbreaking research and field advancements.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 4,
-      "name": "Workshop 1 & Research Talk 1",
-      "role": "12:10 - 1:10 PM",
-      "topic": "Hands-on Learning & Insights",
-      "description": "Interactive session on emerging technologies and research breakthroughs.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 5,
-      "name": "Networking Lunch",
-      "role": "1:20 - 2:20 PM",
-      "topic": "Professional Networking",
-      "description": "Opportunity for attendees to connect with peers and industry leaders.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 6,
-      "name": "Speaker Session 1 & 2",
-      "role": "2:30 - 3:30 PM",
-      "topic": "Innovations in Technology",
-      "description": "Talks by industry experts on cutting-edge advancements in tech.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 7,
-      "name": "Workshop 2 & Research Talk 2",
-      "role": "3:40 - 4:40 PM",
-      "topic": "Deep Dive into Research and Practical Applications",
-      "description": "Exploring applied research and real-world implementations.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 8,
-      "name": "Panel 2 + Q&A / Research Presentations",
-      "role": "4:45 - 5:45 PM",
-      "topic": "Future Perspectives in Technology and Research",
-      "description": "Discussion on upcoming challenges and opportunities in the industry.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 9,
-      "name": "Snacks",
-      "role": "5:45 - 6:00 PM",
-      "topic": "Break",
-      "description": "Refreshments and informal discussions.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 10,
-      "name": "Keynote Talk",
-      "role": "6:00 - 7:00 PM",
-      "topic": "Visionary Insights from Industry Leaders",
-      "description": "Keynote address by a distinguished speaker.",
-      "image": "/api/placeholder/400/400"
-    },
-    {
-      "id": 11,
-      "name": "Closing Ceremony",
-      "role": "7:00 - 7:30 PM",
-      "topic": "Event Wrap-up and Acknowledgments",
-      "description": "Summary of the day's insights and closing remarks.",
-      "image": "/api/placeholder/400/400"
-    }
-  ]
+  ],
 };
 
+interface Event {
+  id: number;
+  time: string;
+  name: string;
+  location: string;
+  speakers: string[];
+}
+
+interface eventsData {
+  [key: string]: Event[];
+}
+const eventData: eventsData = {
+  Events: [
+    {
+      id: 1,
+      time: "9:00 - 10:00 AM",
+      name: "Registration",
+      location: "Main Lobby",
+      speakers: [],
+    },
+    {
+      id: 2,
+      time: "10:00 - 10:15 AM",
+      name: "Opening Ceremony",
+      location: "Auditorium",
+      speakers: ["Event Organizers", "Key Dignitaries"],
+    },
+    {
+      id: 3,
+      time: "10:30 - 12:00 PM",
+      name: "Panel 1 + Q&A / Research Presentation",
+      location: "Conference Room A",
+      speakers: ["Dr. Alice Johnson", "Prof. Mark Lee"],
+    },
+    {
+      id: 4,
+      time: "12:10 - 1:10 PM",
+      name: "Workshop 1 & Research Talk 1",
+      location: "Lab 3",
+      speakers: ["Jane Doe", "Dr. Robert White"],
+    },
+    {
+      id: 5,
+      time: "1:20 - 2:20 PM",
+      name: "Networking Lunch",
+      location: "Cafeteria",
+      speakers: [],
+    },
+    {
+      id: 6,
+      time: "2:30 - 3:30 PM",
+      name: "Speaker Session 1 & 2",
+      location: "Auditorium",
+      speakers: ["Vrinda Kapoor", "Sumita Arora"],
+    },
+  ],
+};
+
+const tabs = ["Speakers", "Events"];
+
 const App = () => {
-  const [activeDay, setActiveDay] = useState<string>(
-    Object.keys(speakersData)[0]
-  );
+  const [activeDay, setActiveDay] = useState<string>(tabs[0]);
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [highlightsRef, isHighlightsInView] = useInView();
@@ -335,7 +311,7 @@ const App = () => {
           </h2>
 
           <div className="flex mb-8 border-b">
-            {Object.keys(speakersData).map((day) => (
+            {tabs.map((day) => (
               <button
                 key={day}
                 onClick={() => setActiveDay(day)}
@@ -350,40 +326,70 @@ const App = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {speakersData[activeDay as keyof typeof speakersData].map(
-              (speaker) => (
-                <div
-                  key={speaker.id}
-                  className="overflow-hidden transition-all duration-300 hover:shadow-lg border rounded-lg"
-                >
-                  <div className="aspect-square relative overflow-hidden bg-gray-100">
-                    <img
-                      src={speaker.image}
-                      alt={speaker.name}
-                      className="w-full h-full object-cover"
-                    />
+          {/* Speakers Section */}
+          {activeDay === tabs[0] && (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {speakersData.Speakers.map((speaker) => (
+                  <div
+                    key={speaker.id}
+                    className="overflow-hidden transition-all duration-300 hover:shadow-lg border rounded-lg"
+                  >
+                    <div className="aspect-square relative overflow-hidden bg-gray-100">
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
+                      <p className="text-red-700 mb-3">{speaker.role}</p>
+                      <p className="text-sm text-gray-600 mb-4">
+                        {speaker.topic}
+                      </p>
+                    </div>
+                    <div className="border-t p-4">
+                      <button
+                        onClick={() => {
+                          setSelectedSpeaker(speaker);
+                          setIsModalOpen(true);
+                        }}
+                        className="w-full border border-gray-300 hover:bg-red-700 hover:text-white py-2 px-4 rounded-md"
+                      >
+                        View Details
+                      </button>
+                    </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
-                    <p className="text-red-700 mb-3">{speaker.role}</p>
-                    <p className="text-sm text-gray-600 mb-4">
-                      {speaker.topic}
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* Events Section */}
+          {activeDay === tabs[1] && (
+            <>
+              <div className="space-y-6">
+                {eventData.Events.map((event) => (
+                  <div
+                    key={event.id}
+                    className="p-6 bg-gray-100 rounded-lg shadow"
+                  >
+                    <h3 className="text-xl font-bold mb-1">{event.name}</h3>
+                    <p className="text-gray-600 mb-1">{event.time}</p>
+                    <p className="text-sm text-gray-500 mb-3">
+                      Location: {event.location}
                     </p>
-                    <button
-                      onClick={() => {
-                        setSelectedSpeaker(speaker);
-                        setIsModalOpen(true);
-                      }}
-                      className="w-full border border-gray-300 hover:bg-gray-50 py-2 px-4 rounded-md"
-                    >
-                      View Details
-                    </button>
+                    {event.speakers.length > 0 && (
+                      <p className="text-sm text-gray-700">
+                        Speakers: {event.speakers.join(", ")}
+                      </p>
+                    )}
                   </div>
-                </div>
-              )
-            )}
-          </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </section>
 
