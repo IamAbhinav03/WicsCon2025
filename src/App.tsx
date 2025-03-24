@@ -103,10 +103,10 @@ const speakersData = {
     {
       id: 11,
       name: "Anna Roy",
-      role: "Founder, The Startup School",
-      topic: "Entrepreneurship and Innovation",
+      role: "Director of the Data Management and Analysis Vertical at Niti Aayog",
+      topic: "Keynote Talk 1",
       description: "",
-      image: "/anna.jpeg",
+      image: "/anna.jpeg ",
     },
     {
       id: 12,
