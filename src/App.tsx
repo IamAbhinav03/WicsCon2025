@@ -21,7 +21,7 @@ const speakersData = {
       role: "CEO, 3rdiTech - Aerospace Technology Innovator",
       topic: "The Future of Aerospace Technology",
       description:
-        "Insights into cutting-edge innovations in aerospace and emerging technologies.",
+        "Revolutionizing Indian Enterprises with Deep Tech AI: Opportunities, Challenges, and the Path Ahead",
       image: "/vrinda.jpeg",
     },
     {
@@ -30,7 +30,7 @@ const speakersData = {
       role: "Renowned CS Textbook Author",
       topic: "Empowering the Next Generation of Coders",
       description:
-        "How education and curriculum development shape the future of technology.",
+        "Empowering Future Innovators: Making Computer Science Education Accessible for High School Students in India",
       image: "/sumita.jpeg",
     },
     {
@@ -39,7 +39,7 @@ const speakersData = {
       role: "Product Manager, Microsoft & Co-Founder, Girls Grow",
       topic: "Women in Tech and Leadership",
       description:
-        "Strategies to foster diversity, inclusion, and leadership in technology.",
+        "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
       image: "/aashna.jpeg",
     },
     {
@@ -47,8 +47,7 @@ const speakersData = {
       name: "Amrita Choudhary",
       role: "Director, CCAOI & Global Leader in Internet Governance",
       topic: "Internet Governance and Digital Rights",
-      description:
-        "Exploring policies shaping the internet and their global impact.",
+      description: "The AI Dilemma: Who Governs the Machines Governing Us?",
       image: "/amrita.jpeg",
     },
     {
@@ -57,7 +56,7 @@ const speakersData = {
       role: "Advisory Council, Harvard Business Review & CEO, JSS Science & Tech Entrepreneurs Park",
       topic: "Entrepreneurship and Innovation in Science & Technology",
       description:
-        "Insights into startup ecosystems, research commercialization, and growth strategies.",
+        "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
       image: "/divya.jpeg",
     },
     {
@@ -65,8 +64,7 @@ const speakersData = {
       name: "Apar Gupta",
       role: "Co-Founder, Internet Freedom Foundation",
       topic: "Digital Rights and Privacy",
-      description:
-        "A discussion on the importance of internet freedom and cybersecurity.",
+      description: "The AI Dilemma: Who Governs the Machines Governing Us?",
       image: "/apar.webp",
     },
     {
@@ -75,8 +73,49 @@ const speakersData = {
       role: "Author & Tech Leader with experience at Mastercard, Citi, NYU, IIT-M, and CMI",
       topic: "Tech, Leadership, and the Future of Digital Transformation",
       description:
-        "How leadership and innovation shape technological progress.",
+        "Auction Action and the Art of Strategic Trading - A Gamified Workshop.",
       image: "nivedita.jpeg",
+    },
+    {
+      id: 8,
+      name: "Nidhi Singh",
+      role: "Research Analyst, Carnegie Endowment for International Peace",
+      topic: "Entrepreneurship and Innovation",
+      description: "The AI Dilemma: Who Governs the Machines Governing Us?",
+      image: "/nidhi.jpg",
+    },
+    {
+      id: 9,
+      name: "Colin Fernandez",
+      role: "Vice President - Innovation, Axis Max Life Insurance",
+      topic: "Journey of ML and Generative AI",
+      description: "Journey of ML and Generative AI",
+      image: "/colin.jpeg",
+    },
+    {
+      id: 10,
+      name: "Bhavya Bansal",
+      role: "Product Manager, Google",
+      topic: "Product Teardown and Management Workshop",
+      description: "Product Teardown and Management Workshop",
+      image: "/bhavya.jpeg",
+    },
+    {
+      id: 11,
+      name: "Anna Roy",
+      role: "Founder, The Startup School",
+      topic: "Entrepreneurship and Innovation",
+      description: "",
+      image: "/anna.jpeg",
+    },
+    {
+      id: 12,
+      name: "Romita Ghosh",
+      role: "CEO, iHeal Health Tech Pvt Ltd",
+      topic: "Entrepreneurship and Innovation",
+      description:
+        "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
+      image: "/romita.jpeg",
     },
   ],
 };
@@ -96,80 +135,111 @@ const eventData: eventsData = {
   Events: [
     {
       id: 1,
-      time: "9:00 - 10:00 AM",
+      time: "9:00 - 11:00 AM",
       name: "Registration",
-      location: "Main Lobby",
+      location: "Atrium",
       speakers: [],
     },
     {
       id: 2,
       time: "10:00 - 10:15 AM",
       name: "Opening Ceremony",
-      location: "Auditorium",
-      speakers: ["TBA"],
+      location: "Takshilla, AC02 007",
+      speakers: [
+        "Somak Raychaudhury",
+        "Pramath Raj Sinha",
+        "Subhashis Banerjeek",
+        "Debayan Gupta",
+      ],
     },
     {
       id: 3,
       time: "10:30 - 12:00 PM",
-      name: "Panel 1 + Q&A / Research Presentation",
-      location: "Conference Room A",
-      speakers: ["TBA"],
+      name: "Panel 1 + Q&A - The AI Dilemma: Who Governs the Machines Governing Us?",
+      location: "Takshilla, AC02 007",
+      speakers: ["Apar Gupta", "Nidhi Singh", "Amrita Choudhury"],
     },
     {
       id: 4,
       time: "12:10 - 1:10 PM",
-      name: "Workshop 1 & Research Talk 1",
-      location: "Lab 3",
-      speakers: ["TBA"],
+      name: "Workshop 1 - Auction Action and the Art of Strategic Trading - A Gamified Workshop",
+      location: "AC02",
+      speakers: ["Nivedita Ganesh"],
     },
     {
       id: 5,
-      time: "1:20 - 2:20 PM",
-      name: "Networking Lunch",
-      location: "Cafeteria",
-      speakers: [],
+      time: "12:10 - 1:10 PM",
+      name: "Research Talk 1 - Revolutionizing Indian Enterprises with Deep Tech AI: Opportunities, Challenges, and the Path Ahead",
+      location: "AC02",
+      speakers: ["Vrinda Kapoor"],
     },
     {
       id: 6,
-      time: "2:30 - 3:30 PM",
-      name: "Speaker Session 1 & 2",
-      location: "Auditorium",
-      speakers: ["TBA"],
-    },
-    {
-      id: 7,
-      time: "3:40 - 4:40 PM",
-      name: "Workshop 2 & Research Talk 2",
-      location: "Conference Room B",
-      speakers: ["TBA"],
-    },
-    {
-      id: 8,
-      time: "4:45 - 5:45 PM",
-      name: "Panel 2 + Q&A / Research Presentation",
-      location: "Conference Room B",
-      speakers: ["TBA"],
-    },
-    {
-      id: 9,
-      time: "5:45 - 6:00 PM",
-      name: "Snack Break",
-      location: "Cafeteria",
+      time: "1:20 - 2:20 PM",
+      name: "Networking Lunch",
+      location: "MPH, Admin Block",
       speakers: [],
     },
     {
+      id: 7,
+      time: "2:30 - 3:30 PM",
+      name: "Speaker Session 1 - Empowering Future Innovators: Making Computer Science Education Accessible for High School Students in India",
+      location: "Takshilla, AC02 007k",
+      speakers: ["Sumita Arora"],
+    },
+    {
+      id: 8,
+      time: "2:30 - 3:30 PM",
+      name: "Speaker Session 2",
+      location: "TBA",
+      speakers: ["Colin Fernandez"],
+    },
+    {
+      id: 9,
+      time: "3:40 - 4:40 PM",
+      name: "Workshop 2 - Product Teardown and Management Workshop",
+      location: "AC02",
+      speakers: ["Bhavya Bansal"],
+    },
+    {
       id: 10,
-      time: "6:00 - 7:00 PM",
-      name: "Keynote Talk",
-      location: "Auditorium",
+      time: "3:40 - 4:40 PM",
+      name: "Research Talk 2",
+      location: "TBA",
       speakers: ["TBA"],
     },
     {
       id: 11,
-      time: "7:00 - 7:50 PM",
+      time: "4:45 - 5:45 PM",
+      name: "Panel 2 - Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
+      location: "Takshilla, AC02 007k",
+      speakers: [
+        "Aashna Jha",
+        "Dr. Divya Rajput",
+        "Colin Fernandez",
+        "Romita Ghosh",
+      ],
+    },
+    {
+      id: 12,
+      time: "5:45 - 6:00 PM",
+      name: "Snack Break",
+      location: "TBA",
+      speakers: [],
+    },
+    {
+      id: 13,
+      time: "6:00 - 7:00 PM",
+      name: "Keynote Talk",
+      location: "Takshilla, AC02 007k",
+      speakers: ["Ms Anna Roy"],
+    },
+    {
+      id: 14,
+      time: "7:00 - 7:30 PM",
       name: "Closing Ceremony",
-      location: "Auditorium",
-      speakers: ["TBA"],
+      location: "Takshilla, AC02 007k",
+      speakers: [""],
     },
   ],
 };
@@ -414,7 +484,7 @@ const App = () => {
                 {eventData.Events.map((event) => (
                   <div
                     key={event.id}
-                    className="p-6 bg-gray-100 rounded-lg shadow"
+                    className="p-6 bg-gray-100 rounded-lg shadow hover:bg-red-50 hover:scale-105 transition-colors duration-300"
                   >
                     <h3 className="text-xl font-bold mb-1">{event.name}</h3>
                     <p className="text-gray-600 mb-1">{event.time}</p>
