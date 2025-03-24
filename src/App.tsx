@@ -105,7 +105,7 @@ const speakersData = {
       name: "Anna Roy",
       role: "Director of the Data Management and Analysis Vertical at Niti Aayog",
       topic: "Keynote Talk 1",
-      description: "",
+      description: "TBA",
       image: "/anna.jpeg ",
     },
     {
