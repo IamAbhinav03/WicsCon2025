@@ -254,6 +254,33 @@ const sponsorsData = [
   },
 ];
 
+const Members = [
+  {
+    id: 1,
+    name: "Anushka Gautam ",
+    role: "Co-President ",
+    image: "/team/anushka.jpg",
+  },
+  {
+    id: 2,
+    name: "Ananya Agarwal",
+    role: "Events Co-HOD",
+    image: "/team/ananya.JPG",
+  },
+  {
+    id: 3,
+    name: "Mihika Grover",
+    role: "Marketing Co-HOD",
+    image: "/team/mihika.jpg",
+  },
+  {
+    id: 4,
+    name: "Deshana Mehta",
+    role: "Marketing Co-HOD",
+    image: "/team/deshana.jpeg",
+  },
+];
+
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(tabs[0]);
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
@@ -455,7 +482,9 @@ const App = () => {
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
-                      <p className="text-red-700 mb-3">{speaker.role}</p>
+                      <p className="text-red-700 mb-3 min-h-12">
+                        {speaker.role}
+                      </p>
                       {/* <p className="text-sm text-gray-600 mb-4">
                         {speaker.topic}
                       </p> */}
@@ -547,6 +576,34 @@ const App = () => {
           </div>
         </div>
       </section>
+
+      {/* Meet the Team Section */}
+      {/* <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+            Meet the Team
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Members.map((member) => (
+              <div className="flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white rounded-lg p-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-red-200">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-red-800">
+                  {member.name}
+                </h3>
+                <p className="text-red-600">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <hr className="w-3/4 h-1 mx-auto my-4 bg-red-100 border-0 rounded-sm md:my-10"></hr> */}
 
       {/* FAQs Section */}
       <section id="faqs" className="py-16 bg-white">
