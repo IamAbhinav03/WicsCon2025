@@ -254,32 +254,32 @@ const sponsorsData = [
   },
 ];
 
-const Members = [
-  {
-    id: 1,
-    name: "Anushka Gautam ",
-    role: "Co-President ",
-    image: "/team/anushka.jpg",
-  },
-  {
-    id: 2,
-    name: "Ananya Agarwal",
-    role: "Events Co-HOD",
-    image: "/team/ananya.JPG",
-  },
-  {
-    id: 3,
-    name: "Mihika Grover",
-    role: "Marketing Co-HOD",
-    image: "/team/mihika.jpg",
-  },
-  {
-    id: 4,
-    name: "Deshana Mehta",
-    role: "Marketing Co-HOD",
-    image: "/team/deshana.jpeg",
-  },
-];
+// const Members = [
+//   {
+//     id: 1,
+//     name: "Anushka Gautam ",
+//     role: "Co-President ",
+//     image: "/team/anushka.jpg",
+//   },
+//   {
+//     id: 2,
+//     name: "Ananya Agarwal",
+//     role: "Events Co-HOD",
+//     image: "/team/ananya.JPG",
+//   },
+//   {
+//     id: 3,
+//     name: "Mihika Grover",
+//     role: "Marketing Co-HOD",
+//     image: "/team/mihika.jpg",
+//   },
+//   {
+//     id: 4,
+//     name: "Deshana Mehta",
+//     role: "Marketing Co-HOD",
+//     image: "/team/deshana.jpeg",
+//   },
+// ];
 
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(tabs[0]);
