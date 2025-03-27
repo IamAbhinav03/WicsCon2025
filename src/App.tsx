@@ -249,37 +249,60 @@ const tabs = ["Speakers", "Events"];
 const sponsorsData = [
   {
     id: 1,
+    name: "Meta",
+    image: "/sponsors/meta.jpg",
+  },
+  {
+    id: 2,
     name: "Axis Max Life Insurance",
     image: "/sponsors/axis_life.svg",
   },
 ];
 
-// const Members = [
-//   {
-//     id: 1,
-//     name: "Anushka Gautam ",
-//     role: "Co-President ",
-//     image: "/team/anushka.jpg",
-//   },
-//   {
-//     id: 2,
-//     name: "Ananya Agarwal",
-//     role: "Events Co-HOD",
-//     image: "/team/ananya.JPG",
-//   },
-//   {
-//     id: 3,
-//     name: "Mihika Grover",
-//     role: "Marketing Co-HOD",
-//     image: "/team/mihika.jpg",
-//   },
-//   {
-//     id: 4,
-//     name: "Deshana Mehta",
-//     role: "Marketing Co-HOD",
-//     image: "/team/deshana.jpeg",
-//   },
-// ];
+const Members = [
+  {
+    id: 1,
+    name: "Anushka Gautam ",
+    role: "Co-President",
+    image: "/team/anushka.jpg",
+  },
+  {
+    id: 2,
+    name: "Diya Tripathi",
+    role: "Co-President",
+    image: "/team/diya.jpeg",
+  },
+  {
+    id: 3,
+    name: "Ananya Agarwal",
+    role: "Events Co-HOD",
+    image: "/team/ananya.JPG",
+  },
+  {
+    id: 4,
+    name: "Mihika Grover",
+    role: "Marketing Co-HOD",
+    image: "/team/mihika.jpg",
+  },
+  {
+    id: 5,
+    name: "Deshana Mehta",
+    role: "Marketing Co-HOD",
+    image: "/team/deshana.jpeg",
+  },
+  {
+    id: 6,
+    name: "Anam Ahamed",
+    role: "Outreach Co-HOD",
+    image: "/team/anam.jpeg",
+  },
+  {
+    id: 7,
+    name: "Kenisha Chandak",
+    role: "Policy HOD",
+    image: "/team/kenisha.jpeg",
+  },
+];
 
 const App = () => {
   const [activeDay, setActiveDay] = useState<string>(tabs[0]);
@@ -578,7 +601,7 @@ const App = () => {
       </section>
 
       {/* Meet the Team Section */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
             Meet the Team
@@ -603,7 +626,7 @@ const App = () => {
         </div>
       </section>
 
-      <hr className="w-3/4 h-1 mx-auto my-4 bg-red-100 border-0 rounded-sm md:my-10"></hr> */}
+      <hr className="w-3/4 h-1 mx-auto my-4 bg-red-100 border-0 rounded-sm md:my-10"></hr>
 
       {/* FAQs Section */}
       <section id="faqs" className="py-16 bg-white">
