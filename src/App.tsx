@@ -310,12 +310,18 @@ const Members = [
   },
   {
     id: 9,
+    name: "Vanshika Agarwal",
+    role: "Outreach Co-HOD",
+    image: "/team/vanshika.jpeg",
+  },
+  {
+    id: 10,
     name: "Kenisha Chandak",
     role: "Policy HOD",
     image: "/team/kenisha.jpeg",
   },
   {
-    id: 10,
+    id: 11,
     name: "Abhinav M Hari",
     role: "Website HOD",
     image: "/team/abhinav.jpg",
