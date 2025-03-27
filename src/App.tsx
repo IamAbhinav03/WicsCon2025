@@ -262,45 +262,63 @@ const sponsorsData = [
 const Members = [
   {
     id: 1,
+    name: "Anwesha Ghosh",
+    role: "Vice President",
+    image: "/team/anwesha.jpeg",
+  },
+  {
+    id: 2,
     name: "Anushka Gautam ",
     role: "Co-President",
     image: "/team/anushka.jpg",
   },
   {
-    id: 2,
+    id: 3,
     name: "Diya Tripathi",
     role: "Co-President",
     image: "/team/diya.jpeg",
   },
   {
-    id: 3,
+    id: 4,
     name: "Ananya Agarwal",
     role: "Events Co-HOD",
     image: "/team/ananya.JPG",
   },
   {
-    id: 4,
+    id: 5,
     name: "Mihika Grover",
     role: "Marketing Co-HOD",
     image: "/team/mihika.jpg",
   },
   {
-    id: 5,
+    id: 6,
     name: "Deshana Mehta",
     role: "Marketing Co-HOD",
     image: "/team/deshana.jpeg",
   },
   {
-    id: 6,
+    id: 7,
+    name: "Devansh Srivastava",
+    role: "Marketing Co-HOD",
+    image: "/team/devansh.jpeg",
+  },
+  {
+    id: 8,
     name: "Anam Ahamed",
     role: "Outreach Co-HOD",
     image: "/team/anam.jpeg",
   },
   {
-    id: 7,
+    id: 9,
     name: "Kenisha Chandak",
     role: "Policy HOD",
     image: "/team/kenisha.jpeg",
+  },
+  {
+    id: 10,
+    name: "Abhinav M Hari",
+    role: "Website HOD",
+    image: "/team/abhinav.jpg",
   },
 ];
 
